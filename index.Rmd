@@ -14,7 +14,30 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
-# Data Science Worflows
+## Introduction
+
+This presentation about a data science (DS) scoping framework called **Project Understanding**.
+
+![](figures/nesting.png){width=80%}
+
+## Motivation
+
+Learning a **data science scoping framework** is a great way to improve as a data scientist. 
+
+![](figures/improving.png){width=70%}
+
+**Important**
+
+*"A less technical data scientist can be more effective than a more technical data scientist with the right data science scoping framework."*
+
+# Data Science Process
+
+## Data Science Process
+
+- Anyone know a data science process?
+- Anyone use a data science process?
+
+![](figures/process.png){width=60%}
 
 ## Data Science Process
 
@@ -23,15 +46,15 @@ A **data science process** includes:
 1. data science workflow (e.g. [CRISP-DM](https://www.the-modeling-agency.com/crisp-dm.pdf))
 2. collaboration framework (e.g. [Data Driven Scrum](https://datadrivenscrum.com))
 
-The data science workflow provides the **what** and the collaboration framework provides the **how**. A popular example of a data science process is:
-
-- [Team Data Science Process](https://docs.microsoft.com/en-us/azure/architecture/data-science-process/overview) (TDSP)
+The data science workflow provides the **what** and the collaboration framework provides the **how**.
 
 ## Data Science Process
 
-This workshop is about **data science workflows**. To learn about data science processes I recommend the [Data Science Process Alliance](https://www.datascience-pm.com). This organisation provides **blogs** and **courses** (e.g. Data Science Team Lead).
+This workshop is not about data science process is in general. To learn about data science processes I recommend the [Data Science Process Alliance](https://www.datascience-pm.com). This organisation provides **blogs** and **courses** (e.g. Data Science Team Lead).
 
 ![](figures/dspa-team-lead.png){width=40%}
+
+# Data Science Workflow
 
 ## Data Science Workflow
 
@@ -98,26 +121,115 @@ These phases are represented as *vertices* in a directed graph were the *edges* 
 
 ## CRISP-DM
 
-CRISP-DM is over thirty years old now. NICD uses a modified CRISP-DM that has updated some of the phases, tasks and outcomes. This workshop covers: 
+CRISP-DM is over thirty years old (1999). NICD uses a modified CRISP-DM that has updated some of the phases, tasks and outcomes.
 
-1. Determine Data Science Questions (**task**)
-2. Data Preparation (**phase**)
-4. Modelling (**phase**)
+- We updated **Business Understanding** to **Project Understanding** which is more general.
 
-# Determine Data Science Questions
+# Project Understanding
 
-## Determine Data Science Questions
+## Project Understanding
 
-The **determine data science questions** task involves **two** outcomes:
+Project Understanding is a data science scoping framework. This presentation *only* focuses on the first phase of the workflow.
+
+**Why?**
+
+- (probably) the most important phase
+- data science scoping is under emphasised
+- difference between a good and a great data scientist
+
+## Project Understanding
+
+Project Understanding has four tasks:
+
+1. **Determine Project Objectives**
+2. Assess Situation
+3. **Determine Data Science Questions**
+4. Plan Project
+
+I would like to focus on the **first** and **third** tasks. 
+
+## Project Understanding Canvas
+
+![](figures/canvas.png){width=90%}
+
+# Determine Project Objectives
+
+## Determine Project Objectives
+
+The **determine project objectives** tasks has **three** outcomes:
+
+1. background
+2. project objectives
+3. success criteria
+
+## Background
+
+The background is a paragraph that provides the context to the project. For example, the background for your projects would include information about **global climate change** and its effect on the **north east**.
+
+## Project Objectives
+
+The **project objectives** tasks is the most *important* task. 
+
+![](figures/success-failure.jpg){80%}
+
+A project objective can be the difference between a project being a **success** or a **failing**. 
+
+## Project Objectives
+
+So how to you determine a **good** project objective? You could be:
+
+![](figures/smart.jpg)
+
+## Specific
+
+- Be as **specific** as you can! Global climate change is a very complex problem. Break a **complex** problem down into **simple** problems and determine a simple project objective.
+
+- Simple project objectives are more likely to be a **success** and provide progress towards the broader goal. 
+- Complex project objectives are more likely to be a **failure** and provide no progress towards the broader goal.
+
+## Measureable
+
+A project objective must be measurable to know if the project has been a success or a failure (next outcome). 
+
+## Acheivable, Time-bound
+
+These are less important:
+
+“In science, if you know what you are doing, you should not be doing it. In engineering, if you do not know what you are doing, you should not be doing it.” - **Richard Hamming**
+
+In data **science** you don't know what you are doing. So you probably don't know if it is achievable or time-bound. 
+
+## Relevant
+
+Relevance is important. All projects have **stakeholders**. These are the people that determine if your project objectives are relevant or not. 
+
+Think about the result of a project success. Would this satisfy the stakeholders?
+
+## Project Success Criteria
+
+Since your project objective is measurable. The project success criteria is just a threshold. If the measure is above/below the threshold the project is a success/failure. 
+
+Determining the threshold requires the project stakeholders. 
+
+## Practice
+
+Try producing a **project objective** and **project success criteria** for your project.
+
+- examples?
+- challenges?
+
+# Determine Data Science Question
+
+## Determine Data Science Question
+
+The **determine data science question** task has two outdomes:
 
 1. data science questions
 2. data science success criteria
 
-These will be discussed in turn.
-
 ## Motivation
 
-- the outcomes of the **determine project objectives** task (not covered) are project objectives 
+- the outcomes of the **determine project objectives** task are project objectives 
 - a data science project attempts to achieve the project objectives with data
 - the project objectives are connected to data with **data science questions**
 
@@ -125,7 +237,7 @@ These will be discussed in turn.
 
 ## Data Science Question
 
-A **data science question** is a question that requires data to answer. In the paper [What is the question?](https://www.aaas.org/sites/default/files/Stats_What_Question_2015.pdf?g_zGQR5m3rDJqwXqJ3DxLI5pXZ3hNdHk), Jeffery Leek and Roger Peng identify **six** types of data science question:
+A **data science question** is a question that requires data to answer. In the paper [What is the question?](https://www.aaas.org/sites/default/files/Stats_What_Question_2015.pdf?g_zGQR5m3rDJqwXqJ3DxLI5pXZ3hNdHk), Jeffery Leek and Roger Peng identify **six** types of data science question.
 
 1. descriptive
 2. exploratory
@@ -138,51 +250,40 @@ Identifying the type of a question can be **very hard**. To make this easier we 
 
 ## Data Terms
 
-1. **Individual**: single data point
-2. **Population**: set of all *possible* data points
-3. **Sample**: subset of all *possible* data points (e.g. dataset)
+![](figures/visual-data.png){width=80%}
 
-**Example**
+- **Observed Data** is in the dataset
+- **Unobserved Data** is not in the dataset
 
-Collecting data from students (i.e. individuals) in a class (i.e. sample) in a school (i.e. population). 
+## Descriptive
 
-**Purpose**
+- **Descriptive**: questions about the observed data
+  - e.g. What is the maximum observed temperature?
 
-Some question types relate to individuals and some question types relate to populations.
+Questions about unobserved data require models. These questions are **model-based** questions.
 
-## Data Terms
+![](figures/models.png){width=60%}
 
-![](figures/data-terms.png)
+## Estimative vs Predictive
 
-## Models
+- **Estimative**: questions about a group of unobserved data
+  - e.g. What is the mean temperature over a region (spatial *group*) over a time period (temporal *group*)?
+- **Predictive**: questions about an individual unobserved datum
+  - e.g. What is the temperature at a location (*individual* spatial location) at a time (*individual* temporal point)?
 
-Models are used to combine **prior information** with data. Statistics and Machine Learning techniques use models:
-
-- e.g. linear regression models
-- e.g. deep learning models
-
-**Purpose**
-
-Some question types require a model and some question types do not.
-
-## Causation
+## Causal vs Mechanistic
 
 It is well known that **correlation does not imply causation**. So it is important to know when a questions requires a causal answer or not.
 
 
 ![](figures/newtons-cradle.png){width=70%}
 
-
-**Purpose**
-
-Some question types require a causal answer and some question types do not.
+- **Causal**: causal estimative questions
+- **Mechanistic**: causal predictive questions
 
 ## Question Types
 
-- **Descriptive Question:** descriptive questions use tables and figures to understand the sample
-- **Exploratory Question:** exploratory questions are descriptive questions that require interpretation
-
-**Model-Based Questions**
+- **Descriptive Question:** descriptive questions use tables and figures to summaries the dataset
 
 ![](figures/model-based.png){width=60%}
 
@@ -198,177 +299,32 @@ Why are question types important?
     - e.g. **Machine Learning** for predictive questions
     - e.g. **Bayesian Statistics** for estimative questions
 2. answering a question type can be easy or hard
-    - e.g. individual $>$ population
+    - e.g. individual $>$ group
     - e.g. causal $>$ non-causal
     - e.g. model-based $>$ model-free
 3. answer easy question types before hard question types
-4. ensuring actual and perceived question types are the same
-
-## Actual vs Perceived
-
-![](figures/mistakes.png){width=100%}
 
 ## Challenges
 
 Project objectives might require question types that requires:
 
-1. **techniques** that your team does not currently have
-2. **tools** that your organisation does not currently have
+1. **techniques** that you do not currently have
+2. **tools** that you do not currently have
 
-This can help an organisation identify areas of improvement.
+This can help identify areas of improvement.
 
 ## Data Science Success Criteria
 
 **data science success criteria** are about identifying when data science questions have been answered sufficiently. A criterion can be objective or subjective:
 
-- **objective**: predict churn with 98% accuracy
+- **objective**: predict temperature with 98% accuracy
 - **subjective**: develop insights about churn
 
 The person responsible for each subjective success criterion must be included.
 
-# Data Preparation
+## Practice
 
-## Data Preparation
+Try producing a **data science question** and **data science success criteria** for your project.
 
-The **data preparation** phase of the NICD data science workflow includes two tasks:
-
-1. cleaning data
-2. wrangling data
-
-This presentation is going to focus on organising data transformations into cleaning and wrangling and a project template that facilitates this. 
-
-## Project Templates
-
-A **good** project template should be:
-
-1. broadly applicable
-2. encourage good practice
-3. language agnostic
-
-Developing a broadly applicable project template requires defining some broad data science terms. These terms are:
-
-- **data question**
-- **data source**
-- **data product**
-- **data pipeline**.
-
-## Data Question
-
-A **data question** is a question related to data, introduced in [What is the Question?](https://www.aaas.org/sites/default/files/Stats_What_Question_2015.pdf?g_zGQR5m3rDJqwXqJ3DxLI5pXZ3hNdHk) There are six types of data question:
-
-1. descriptive
-2. exploratory
-3. estimative
-4. predictive
-5. causal
-6. mechanistic
-
-## Data Source
-
-A data question requires one or more relevant datasets. A dataset is available from a **data source**. Data sources include:
-
-- databases
-- flat files (e.g. CSV file)
-- web services (e.g. web API)
-
-**Note**: Different data questions require different data sources.
-
-## Data Product
-
-A data question requires an answer. The answer to a data question is a **data product**. Data products include:
-
-- tables
-- figures
-- reports
-- models
-
-**Note**: Different data questions require different data products.
-
-## Data Pipeline
-
-A **data pipeline** imports data from one or more data sources and transforms that data into a data product that is deployed. This could be performed in a single `pipeline.script`:
-
-![](figures/pipeline.png){width=100%}
-
-## Project Template Development
-
-The NICD project template has four directories:
-
-1. `src/` directory
-2. `data/` directory
-3. `reports/` directory
-4. `notebooks/` directory
-
-The **structure** and **reasoning** for these directories follows. The emphasis is on encouraging good practice.
-
-## `src/` Directory
-
-Different data questions require different data pipelines (different data sources and products). It is important that data pipelines can be efficiently **developed** and **maintained** when the data question *inevitably* changes. This can be facilitated by:
-
-1. question independent code in `clean/` directory
-2. a `clean.script` for each data source
-3. question dependent code in `wrangle/` directory
-4. a `wrangle.script` for each data question
-5. model dependent code in `model/` directory
-6. a `model.script` for each model-based data product
-
-Other data products will follow.
-
-## `src/` Directory
-
-![](figures/clean-wrangle-model.png){width=100%}
-
-## `src/` Directory
-
-![](figures/sources-deploys.png){width=100%}
-    
-## `src/` Directory
-
-![](figures/models.png){width=100%}
-
-## `data/` Directory
-
-The clean, wrangle and model scripts should write data to different data directories:
-
-1. `clean.script` writes to `data/clean/`
-2. `wrangle.script` writes to `data/wrangle/`
-3. `model.script` writes to `data/model/`
-
-The `clean/` and `wrangle/` data directories match the `staging/` and `production/` directories in the [Cloud Data Platform](https://www.manning.com/books/designing-cloud-data-platforms) architecture and the `silver/` and `gold/` directories in the [Databricks Medallion](https://databricks.com/notebooks/delta-lake-cdf.html) architecture. 
-
-## `reports/` Directory
-
-Tables and figures in reports are the data products that answer descriptive and exploratory questions. Reports require many artefacts (tables, figures and files) that should be contained in a report directory (`reports/<report_name>/`).
-
-## `notebooks/` Directory
-
-In order to populate the pipeline scripts with transformations, data exploration is required. Data exploration is best performed in notebooks (e.g. `.ipynb` and `.Rmd` files). It is recommended:
-
-1. notebooks should *not* include pipeline transformations
-2. notebooks are not used for collaboration
-3. notebooks use naming: `<ghuser>-<notebook_name>`
-
-## Project Template
-
-```
-README.md
-config.yml
-data/
-├─ clean/
-├─ model/
-├─ raw/
-├─ wrangle/
-notebooks/
-reports/
-src/
-├─ clean/
-│  ├─ clean.script
-├─ model/
-│  ├─ model.script
-├─ wrangle/
-│  ├─ wrangle.script
-```
-
-# Modelling
-
-## Experimental Design
+- examples?
+- challenges?
