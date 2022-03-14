@@ -16,7 +16,7 @@ library(tidyverse)
 
 ## Introduction
 
-This presentation about a data science (DS) scoping framework called **Project Understanding**.
+This presentation about a data science scoping framework called **Project Understanding**.
 
 ![](figures/nesting.png){width=80%}
 
@@ -170,19 +170,19 @@ The background is a paragraph that provides the context to the project. For exam
 
 The **project objectives** tasks is the most *important* task. 
 
-![](figures/success-failure.jpg){80%}
+![](figures/success-failure.jpg){width=80%}
 
-A project objective can be the difference between a project being a **success** or a **failing**. 
+A project objective can be the difference between a project being a **success** or a **failure**. 
 
 ## Project Objectives
 
-So how to you determine a **good** project objective? You could be:
+So how to you determine a **good** project objective?
 
 ![](figures/smart.jpg)
 
 ## Specific
 
-- Be as **specific** as you can! Global climate change is a very complex problem. Break a **complex** problem down into **simple** problems and determine a simple project objective.
+Be as **specific** as you can! Global climate change is a very complex problem. Break a **complex** problem down into **simple** problems and determine a simple project objective.
 
 - Simple project objectives are more likely to be a **success** and provide progress towards the broader goal. 
 - Complex project objectives are more likely to be a **failure** and provide no progress towards the broader goal.
