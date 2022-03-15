@@ -48,11 +48,7 @@ The data science workflow provides the **what** and the collaboration framework 
 
 ## Data Science Process
 
-<<<<<<< HEAD
 This workshop is not about data science processes in general. To learn about data science processes I recommend the [Data Science Process Alliance](https://www.datascience-pm.com). This organisation provides **blogs** and **courses** (e.g. Data Science Team Lead).
-=======
-This workshop is not about data science processes is in general. To learn about data science processes I recommend the [Data Science Process Alliance](https://www.datascience-pm.com). This organisation provides **blogs** and **courses** (e.g. Data Science Team Lead).
->>>>>>> 0d29c0f714052488dea09ac4d9f5b1ed77c4c058
 
 ![](figures/dspa-team-lead.png){width=40%}
 
