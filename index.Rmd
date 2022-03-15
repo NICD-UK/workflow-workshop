@@ -26,8 +26,6 @@ Learning a **data science scoping framework** is a great way to improve as a dat
 
 ![](figures/improving.png){width=70%}
 
-**Important**
-
 *"A less technical data scientist can be more effective than a more technical data scientist with the right data science scoping framework."*
 
 # Data Science Process
@@ -50,7 +48,7 @@ The data science workflow provides the **what** and the collaboration framework 
 
 ## Data Science Process
 
-This workshop is not about data science process is in general. To learn about data science processes I recommend the [Data Science Process Alliance](https://www.datascience-pm.com). This organisation provides **blogs** and **courses** (e.g. Data Science Team Lead).
+This workshop is not about data science processes is in general. To learn about data science processes I recommend the [Data Science Process Alliance](https://www.datascience-pm.com). This organisation provides **blogs** and **courses** (e.g. Data Science Team Lead).
 
 ![](figures/dspa-team-lead.png){width=40%}
 
@@ -96,7 +94,7 @@ The **CRISP-DM** data science workflow:
 - [most popular data science workflow](https://www.datascience-pm.com/crisp-dm-still-most-popular/) (49% usage)
 - hierarchical structure of phases, tasks and outcomes
 - comprehensive 76 page [CRISP-DM guide](https://www.the-modeling-agency.com/crisp-dm.pdf)
-- CRISP-DM figure and table (see CRISP-DM guide)
+- CRISP-DM figure and table
 
 ## CRISP-DM
 
@@ -121,15 +119,15 @@ These phases are represented as *vertices* in a directed graph were the *edges* 
 
 ## CRISP-DM
 
-CRISP-DM is over thirty years old (1999). NICD uses a modified CRISP-DM that has updated some of the phases, tasks and outcomes.
+CRISP-DM is over thirty years old. NICD uses a modified CRISP-DM that has updated some of the phases, tasks and outcomes.
 
-- We updated **Business Understanding** to **Project Understanding** which is more general.
+- We updated **Business Understanding** to **Project Understanding** for generality.
 
 # Project Understanding
 
 ## Project Understanding
 
-Project Understanding is a data science scoping framework. This presentation *only* focuses on the first phase of the workflow.
+Project Understanding is a data science scoping framework. This presentation *only* focuses on the first phase of the NICD workflow.
 
 **Why?**
 
@@ -156,7 +154,7 @@ I would like to focus on the **first** and **third** tasks.
 
 ## Determine Project Objectives
 
-The **determine project objectives** tasks has **three** outcomes:
+The **determine project objectives** task has **three** outcomes:
 
 1. background
 2. project objectives
@@ -164,11 +162,13 @@ The **determine project objectives** tasks has **three** outcomes:
 
 ## Background
 
-The background is a paragraph that provides the context to the project. For example, the background for your projects would include information about **global climate change** and its effect on the **north east**.
+The background is a paragraph that provides the context to the project. For example, the background for your projects would include information about the **global climate change** and its effect on the **north east**.
+
+![](figures/globe.jpg){width=70%}
 
 ## Project Objectives
 
-The **project objectives** tasks is the most *important* task. 
+The **project objectives** task is the most *important* task. 
 
 ![](figures/success-failure.jpg){width=80%}
 
@@ -191,6 +191,8 @@ Be as **specific** as you can! Global climate change is a very complex problem. 
 
 A project objective must be measurable to know if the project has been a success or a failure (next outcome). 
 
+![](figures/measure.jpeg){width=50%}
+
 ## Acheivable, Time-bound
 
 These are less important:
@@ -202,6 +204,8 @@ In data **science** you don't know what you are doing. So you probably don't kno
 ## Relevant
 
 Relevance is important. All projects have **stakeholders**. These are the people that determine if your project objectives are relevant or not. 
+
+![](figures/relevant.jpg){width=70%}
 
 Think about the result of a project success. Would this satisfy the stakeholders?
 
@@ -222,7 +226,7 @@ Try producing a **project objective** and **project success criteria** for your 
 
 ## Determine Data Science Question
 
-The **determine data science question** task has two outdomes:
+The **determine data science question** task has two outcomes:
 
 1. data science questions
 2. data science success criteria
@@ -250,10 +254,12 @@ Identifying the type of a question can be **very hard**. To make this easier we 
 
 ## Data Terms
 
-![](figures/visual-data.png){width=80%}
+![](figures/visual-data.png){width=70%}
 
 - **Observed Data** is in the dataset
 - **Unobserved Data** is not in the dataset
+- **Group** is a set of data points
+- **Individual** is a data point
 
 ## Descriptive
 
@@ -273,7 +279,7 @@ Questions about unobserved data require models. These questions are **model-base
 
 ## Causal vs Mechanistic
 
-It is well known that **correlation does not imply causation**. So it is important to know when a questions requires a causal answer or not.
+It is well known that **correlation does not imply causation**. So it is important to know when a question requires a causal answer or not.
 
 
 ![](figures/newtons-cradle.png){width=70%}
@@ -285,11 +291,9 @@ It is well known that **correlation does not imply causation**. So it is importa
 
 - **Descriptive Question:** descriptive questions use tables and figures to summaries the dataset
 
+**Model-based**
+
 ![](figures/model-based.png){width=60%}
-
-## Practice
-
-**What data science questions are you asking?**
 
 ## Motivation
 
@@ -318,7 +322,7 @@ This can help identify areas of improvement.
 **data science success criteria** are about identifying when data science questions have been answered sufficiently. A criterion can be objective or subjective:
 
 - **objective**: predict temperature with 98% accuracy
-- **subjective**: develop insights about churn
+- **subjective**: develop insights temperature trends
 
 The person responsible for each subjective success criterion must be included.
 
@@ -328,3 +332,15 @@ Try producing a **data science question** and **data science success criteria** 
 
 - examples?
 - challenges?
+
+# Data Science Link
+
+## Data Science Link
+
+This is the most important figure.
+
+![](figures/link.png){width=100%}
+
+I am convinced that good **project objectives**, relevant **data** and good **data science questions** is what differentiates good and great data scientists.
+
+# Questions?
